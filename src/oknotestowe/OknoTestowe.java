@@ -5,11 +5,9 @@
  */
 package oknotestowe;
 
-import wyswietlacz.Wyswietlacz;
-
 /**
  *
- * @author TomaszFigurski
+ * @author Tomek
  */
 public class OknoTestowe extends javax.swing.JFrame {
 
@@ -18,7 +16,6 @@ public class OknoTestowe extends javax.swing.JFrame {
      */
     public OknoTestowe() {
         initComponents();
-        setLayout(null);
     }
 
     /**
@@ -31,38 +28,26 @@ public class OknoTestowe extends javax.swing.JFrame {
     private void initComponents() {
 
         wyswietlacz1 = new wyswietlacz.Wyswietlacz();
-        wyswietlacz2 = new wyswietlacz.Wyswietlacz();
-
-        javax.swing.GroupLayout wyswietlacz1Layout = new javax.swing.GroupLayout(wyswietlacz1);
-        wyswietlacz1.setLayout(wyswietlacz1Layout);
-        wyswietlacz1Layout.setHorizontalGroup(
-            wyswietlacz1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 42, Short.MAX_VALUE)
-        );
-        wyswietlacz1Layout.setVerticalGroup(
-            wyswietlacz1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 68, Short.MAX_VALUE)
-        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        wyswietlacz2.setLiczbaWyswietlana(8.8);
+        wyswietlacz1.setLiczbaWyswietlana(123456.0);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(101, 101, 101)
-                .addComponent(wyswietlacz2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(359, Short.MAX_VALUE))
+                .addGap(326, 326, 326)
+                .addComponent(wyswietlacz1, javax.swing.GroupLayout.PREFERRED_SIZE, 347, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(139, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(74, 74, 74)
-                .addComponent(wyswietlacz2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(278, Short.MAX_VALUE))
+                .addGap(120, 120, 120)
+                .addComponent(wyswietlacz1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(362, Short.MAX_VALUE))
         );
 
         pack();
@@ -77,21 +62,33 @@ public class OknoTestowe extends javax.swing.JFrame {
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
          */
-        
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(OknoTestowe.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(OknoTestowe.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(OknoTestowe.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(OknoTestowe.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
         //</editor-fold>
-        
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new OknoTestowe().setVisible(true);
-                
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private wyswietlacz.Wyswietlacz wyswietlacz1;
-    private wyswietlacz.Wyswietlacz wyswietlacz2;
     // End of variables declaration//GEN-END:variables
 }

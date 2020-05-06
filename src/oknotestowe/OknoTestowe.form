@@ -1,23 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
-  <NonVisualComponents>
-    <Container class="wyswietlacz.Wyswietlacz" name="wyswietlacz1">
-
-      <Layout>
-        <DimensionLayout dim="0">
-          <Group type="103" groupAlignment="0" attributes="0">
-              <EmptySpace min="0" pref="42" max="32767" attributes="0"/>
-          </Group>
-        </DimensionLayout>
-        <DimensionLayout dim="1">
-          <Group type="103" groupAlignment="0" attributes="0">
-              <EmptySpace min="0" pref="68" max="32767" attributes="0"/>
-          </Group>
-        </DimensionLayout>
-      </Layout>
-    </Container>
-  </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
   </Properties>
@@ -41,26 +24,26 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="101" max="-2" attributes="0"/>
-              <Component id="wyswietlacz2" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="359" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="326" max="-2" attributes="0"/>
+              <Component id="wyswietlacz1" min="-2" pref="347" max="-2" attributes="0"/>
+              <EmptySpace pref="139" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
-              <Component id="wyswietlacz2" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="278" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="120" max="-2" attributes="0"/>
+              <Component id="wyswietlacz1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="362" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Container class="wyswietlacz.Wyswietlacz" name="wyswietlacz2">
+    <Container class="wyswietlacz.Wyswietlacz" name="wyswietlacz1">
       <Properties>
-        <Property name="liczbaWyswietlana" type="double" value="8.8"/>
+        <Property name="liczbaWyswietlana" type="double" value="123456.0"/>
       </Properties>
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignFlowLayout"/>
